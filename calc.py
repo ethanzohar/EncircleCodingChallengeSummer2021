@@ -2,7 +2,7 @@ import sys
 import re
 
 # Regex to split a given string into an S-Expression format
-sExprRegex = re.compile("(^add)|(^multiply)|(\s\d(\)|\s))|(\((?<=\().*\))|\s")
+sExprRegex = re.compile("(^add)|(^multiply)|(\s\d(\)|\s))|(\((?<=\().*?\))|\s")
 
 def calc(expr):
     # If the first character of the expression is a '('
